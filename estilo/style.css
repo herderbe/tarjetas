@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    margin-top: 60px;
+    width: 90%;
+    gap: 10px;
+}
+.imagenes{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+    border-radius: 29px;
+    transition: 1s ease;
+    width: 50px;
+    color: #000000;
+    overflow: hidden;
+}
+.imagenes h3{
+    background-color: #ffffff79;
+    transition: all .5s ease;
+    position: absolute;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+    margin-left: 20px;
+    left: 0px;
+    bottom: 10px;
+    opacity: 0;
+}
+.imagenes:nth-child(1){
+    background-image: url(../img/machu-picchu.jpg);
+}
+.imagenes:nth-child(2){
+    background-image: url(../img/Chichen_Itza.jpg);
+}
+.imagenes:nth-child(3){
+    background-image: url(../img/muralla-china.png);
+}
+.imagenes:nth-child(4){
+    background-image: url(../img/Pirámides-Giza.jpg);
+}
+.imagenes:nth-child(5){
+    background-image: url(../img/Taj-Mahal.jpg);
+}
+.cambio{
+    width: 50%;
+    height: 85vh;
+}
+.cambio h3{
+    opacity: 1;
+}
+@media (max-width: 520px) {
+    .contenedor {
+        flex-direction: column;
+        height: 100vh;
+    }
+    .imagenes{
+        width: 60%;
+    }
+    .cambio{
+        height: 550vh;
+    }
+}  
